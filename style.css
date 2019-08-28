@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body #wrapper {
+    padding: 1%;
+    text-align: center;
+}
+
+#wrapper #question,
+#wrapper #result,
+#wrapper #congrats {
+    font-size: 24px;
+    margin-top: 2%;
+}
+
+#wrapper ul {
+    margin-left: 0%;
+    padding-left: 0%;
+    font-size: 20px;
+}
+
+#wrapper #answers li {
+    list-style-type: none;
+    margin-top: 2%;
+    border: 1px solid rgb(156, 9, 214);
+    border-radius: 5px;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 25%;
+}
+
+#wrapper #answers li:hover {
+    cursor: pointer;
+    background-color: rgb(235, 185, 255);
+    transition-duration: .4s;
+}
+
+#wrapper #answers li:active {
+    transform: scale(0.98);
+    transition-duration: .2s;
+}
+
+#wrapper #mistakes li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 2%;
+    width: 96%;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 2%;
+}
+
+#wrapper #mistakes li div {
+    width: 45%;
+}
+
+#wrapper #mistakes li .options {
+    border: 1px solid rgb(134, 134, 134);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 440px) {
+    #wrapper #answers li {
+        margin-top: 4%;
+        width: 96%;
+        margin-left: 2%;
+        height: 60px;
+        line-height: 60px;
+    }
+}
